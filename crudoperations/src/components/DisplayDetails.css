@@ -1,0 +1,95 @@
+/* Container Styles */
+article {
+  background: linear-gradient(135deg, #d1bc67, #ddc672); /* Gradient background */
+  padding: 24px; /* Slightly more padding for breathing space */
+  margin: 20px auto; /* Centered with margin */
+  border-radius: 16px; /* Larger rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow for depth */
+  border: 5px solid rgb(12, 173, 173); /* Slightly thinner for subtle elegance */
+  max-width: 600px; /* Increased width for better readability */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: Britanic Bold;
+  color: #f70303;
+}
+
+/* Hover Effect for Article */
+article:hover {
+  transform: translateY(-4px); /* Lift effect */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Paragraph Styling */
+article p {
+  margin: 10px 0;
+  font-size: 16px; /* Slightly larger for readability */
+  color: #ff0000; /* Softer contrast for eyes */
+  line-height: 1.6;
+}
+
+/* Aside Section (Buttons Container) */
+aside {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end; /* Align buttons to the right */
+}
+
+/* Common Button Styles */
+aside button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover & Active Effects */
+aside button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+aside button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Primary Button */
+aside button:first-child {
+  background: linear-gradient(45deg, #007bff, #005ec4);
+  color: #fff;
+}
+
+aside button:first-child:hover {
+  background: linear-gradient(45deg, #005ec4, #00409e);
+}
+
+/* Danger Button */
+aside button:last-child {
+  background: linear-gradient(45deg, #dc3545, #b52a36);
+  color: #fff;
+}
+
+aside button:last-child:hover {
+  background: linear-gradient(45deg, #b52a36, #901f29);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  article {
+    padding: 16px;
+    margin: 16px;
+  }
+
+  aside {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  aside button {
+    width: 100%;
+  }
+}
